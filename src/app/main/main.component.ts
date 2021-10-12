@@ -50,6 +50,7 @@ export class MainComponent implements OnInit {
      if(this.carInfo.valid){
         let a=this.carInfo.value;
         this.cars.push(a);
+        this.carInfo.reset();
 
      }
   }

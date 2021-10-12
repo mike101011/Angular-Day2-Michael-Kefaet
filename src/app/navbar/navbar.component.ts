@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavbarComponent implements OnInit {
 counter:number=0;
+vipMessage:string="You are a Vip!"
   constructor() { }
 plus(){
   this.counter+=10;
