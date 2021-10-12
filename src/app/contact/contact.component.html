@@ -1,0 +1,29 @@
+<div class="container">
+  <form [formGroup]="info" (ngSubmit)="onSubmit()">
+    <label>
+      First Name:
+      <input type="text" formControlName="firstName" />
+    </label>
+    <br />
+    <br />
+    <label>
+      Surname:
+      <input type="text" formControlName="lastName" />
+    </label>
+    <br />
+    <br />
+    <label>
+      Payment:
+      <input type="text" formControlName="payment" />
+    </label>
+    <br />
+    <br />
+    <label>
+      Email:
+      <input type="text" formControlName="email" />
+    </label>
+    <br /><br />
+    <input type="submit" value="Submit" />
+    <!--type=submit wichtig, weil (ngSubmit) sonst nicht funktioniert!   -->
+  </form>
+</div>
